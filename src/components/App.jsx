@@ -10,8 +10,8 @@ class App extends React.Component {
     this.state = {
       flatsJs,
       selectedFlatDescript: "",
-      selectedFlatLat: null,
-      selectedFlatLng: null
+      selectedFlatLat: flatsJs[0].lat,
+      selectedFlatLng: flatsJs[0].lng
     };
   };
 
@@ -21,13 +21,10 @@ class App extends React.Component {
       selectedFlatLat: lat,
       selectedFlatLng: lng
     });
-    // console.log(selectedFlatDescript)
-    console.log(descript)
-    console.log(this.state.selectedFlatDescript)
   };
  
   render() {
-    // console.log(this.selectedFlatLat)
+    console.log("App")
     return (
       <div className="App">
         <FlatList list={this.state.flatsJs} selectFlat={this.changeFlat} />

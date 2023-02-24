@@ -4,6 +4,7 @@ function Flat({ link, price, descript, lat, lng, selectFlat }) {
   const handleClick = () => {
     return selectFlat(descript, lat, lng);
   }
+  console.log('flat')
   return (
     <div className="card" style={ { backgroundImage: `url(${link})` } }
     onClick={handleClick}>

@@ -1,4 +1,4 @@
-// import React from 'react';
+import React from 'react';
 import Flat from './Flat';
 
 function FlatList({ list, selectFlat }) {
@@ -17,6 +17,8 @@ function FlatList({ list, selectFlat }) {
       );
     });
   }
+
+  console.log("flatlist")
   return (
     <div className='flat-list'>
       {renderList()}

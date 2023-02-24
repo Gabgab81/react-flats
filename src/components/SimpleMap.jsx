@@ -13,8 +13,6 @@ function SimpleMap({name, lat, lng }){
     zoom: 11
   };
 
-  console.log(lat)
-
   return (
     // Important! Always set the container height explicitly
     <div className="map-container">
