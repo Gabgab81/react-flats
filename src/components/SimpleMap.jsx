@@ -18,7 +18,6 @@ function SimpleMap({name, lat, lng }){
     <div className="map-container">
       <div style={{ height: '100vh', width: '100%' }}>
         <GoogleMapReact
-          bootstrapURLKeys={{ key: "AIzaSyBnDH8dMtzmrwW8NsXKiLF8SEjDjQeMuv0" }}
           defaultCenter={defaultProps.center}
           center={ { lat, lng } }
           defaultZoom={defaultProps.zoom}
